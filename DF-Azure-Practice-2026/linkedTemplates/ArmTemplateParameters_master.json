@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DF-Azure-Practice-2026"
+		},
+		"Ls_PostgreSql_properties_typeProperties_server": {
+			"value": "ep-dawn-pond-b5bvk4nz-pooler.c-7.us-east-2.aws.neon.tech"
+		},
+		"Ls_PostgreSql_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"Ls_PostgreSql_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		},
+		"ls_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://saazurecareproject.dfs.core.windows.net/"
+		},
+		"ls_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://Azure-KeyVault-2026.vault.azure.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
