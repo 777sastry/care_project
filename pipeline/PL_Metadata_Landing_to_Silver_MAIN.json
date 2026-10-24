@@ -28,6 +28,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"source_Name": {
+				"type": "string",
+				"defaultValue": "neon_postgres"
+			}
+		},
 		"folder": {
 			"name": "Care_Hospitals"
 		},
