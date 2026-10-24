@@ -17,14 +17,18 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "select * from ctrl.table_config where is_active=1 and source_system = 'neon_postgres'",
+						"sqlReaderQuery": {
+							"value": "select * from ctrl.table_config where is_active=1 and source_system = @{pipeline().parameters.source_Name}",
+							"type": "Expression"
+						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
 					"dataset": {
 						"referenceName": "AzureSqlTable",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
